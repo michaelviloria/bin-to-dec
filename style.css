@@ -11,12 +11,12 @@ html
 }
 body
 {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 /* --------- Main */
@@ -26,37 +26,39 @@ body
   grid-template-columns: 1fr 100px 1fr;
 }
 
+.binary-container,
 .decimal-container,
-.converter-container,
-.binary-container
+.converter-container
 {
-  box-shadow: 0 0 5px #1f1f1f;
   border-radius: 10px;
+  box-shadow: 0 0 5px #1f1f1f;
+  padding: 10px;
 }
 
 .decimal-container
 {
-  text-align: center;
   margin-right: 10px;
+  text-align: center;
 }
 .decimal-container input
 {
-  outline: none;
-  border: none;
   background: transparent;
-  min-width: 100px;
-  height: 40px;
-  padding: 0 10px;
+  border: none;
+  font-weight: 900;
+  height: 100%;
+  margin-right: 10px;
+  outline: none;
+  width: 100%;
 }
 
 .converter-container
 {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
   background: transparent;
+  border: none;
   font-weight: 900;
+  height: 100%;
+  outline: none;
+  width: 100%;
 }
 .converter-container:active
 {
@@ -65,16 +67,16 @@ body
 
 .binary-container
 {
+  border-radius: 10px;
+  box-shadow: 0 0 5px #1f1f1f;
   margin-left: 10px;
   padding: 10px;
-  box-shadow: 0 0 5px #1f1f1f;
-  border-radius: 10px;
 }
 
 .attribution
 {
-  margin-top: 20px;
   grid-column: 1 / 4;
+  margin-top: 20px;
   text-align: center;
 }
 .attribution a
